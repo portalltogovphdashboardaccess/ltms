@@ -10,6 +10,15 @@
   <link rel="stylesheet" href="LTMS%20Online%20Portal%20Login_files/font-apex.min.css" type="text/css">
 <link rel="stylesheet" href="LTMS%20Online%20Portal%20Login_files/Core.min.css" type="text/css">
 
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+.t-Icon[class*="fa-"] {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+</style>
+
   <style type="text/css">
 body .overlay { 
   position: fixed;
@@ -37,7 +46,8 @@ footer.t-Footer {
   margin-bottom: -108px;"  
 }*/
 </style>
-
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="LTMS%20Online%20Portal%20Login_files/38110691971776138.css" type="text/css">
 
   <link rel="stylesheet" href="LTMS%20Online%20Portal%20Login_files/public_portal_min.css" type="text/css">
@@ -51,6 +61,16 @@ html, body {
 }
 #wwvFlowForm {
   min-height:100%;
+}
+
+.apex-item-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  color: #6b7280;
+  pointer-events: none;
 }
 
 .t-Body {
@@ -197,26 +217,38 @@ position: absolute;
       <a href="https://portal.lto.gov.ph/ords/f?p=1200:HOME::::::" class="t-Header-logo-link"><img src="LTMS%20Online%20Portal%20Login_files/lto_logo.png" style="float:left;"></a>
     </div>
     <div class="t-Header-navBar">
-      <ul class="t-NavigationBar " id="69964099393747305"><li class="t-NavigationBar-item ">
-  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="javascript:void(window.open('https://lto.gov.ph/'));">
-    <span class="t-Icon fa fa-cloud"></span><span class="t-Button-label">LTO Official Webpage</span><span class="t-Button-badge"></span>
-  </a>
-</li><li class="t-NavigationBar-item ">
-  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar js-menuButton" type="button" id="L69964099393747307" data-menu="menu_L69964099393747307" aria-haspopup="true" aria-expanded="false">
-      <span class="t-Icon fa fa-graduation-cap"></span><span class="t-Button-label">E-Learning</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow"></span>
-  </button></li><li class="t-NavigationBar-item ">
-  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="https://portal.lto.gov.ph/ords/f?p=PUBLIC_PORTAL:CONTACT_US:111429506694395:::::">
-    <span class="t-Icon fa fa-phone"></span><span class="t-Button-label">Contact</span><span class="t-Button-badge"></span>
-  </a>
-</li><li class="t-NavigationBar-item ">
-  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="https://portal.lto.gov.ph/ords/f?p=PUBLIC_PORTAL:TERMS_AND_CONDITIONS:111429506694395:::::">
-    <span class="t-Icon fa fa-user-plus"></span><span class="t-Button-label">Register</span><span class="t-Button-badge"></span>
-  </a>
-</li><li class="t-NavigationBar-item ">
-  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="https://portal.lto.gov.ph/ords/f?p=1200:LOGIN_DESKTOP:111429506694395:::9999::&amp;cs=3J0FnFOOibV9zCBv75JfyZ2CF5Nk4TGbLIFYIOmd-gWwm66_rBgqc5p3JyWwHtsLnp-rA9l1ZLOJfbZy1x1fS1g">
-    <span class="t-Icon fa fa-user"></span><span class="t-Button-label">Login</span><span class="t-Button-badge"></span>
-  </a>
-</li></ul>
+      <ul class="t-NavigationBar" id="navbar">
+        <li class="t-NavigationBar-item">
+          <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="https://lto.gov.ph/">
+            <span class="t-Icon fa-solid fa-globe"></span>
+            <span class="t-Button-label">LTO Official Webpage</span>
+          </a>
+        </li>
+        <li class="t-NavigationBar-item">
+          <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="#">
+            <span class="t-Icon fa-solid fa-graduation-cap"></span>
+            <span class="t-Button-label">E-Learning</span>
+          </a>
+        </li>
+        <li class="t-NavigationBar-item">
+          <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="#">
+            <span class="t-Icon fa-solid fa-phone"></span>
+            <span class="t-Button-label">Contact</span>
+          </a>
+        </li>
+        <li class="t-NavigationBar-item">
+          <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="#">
+            <span class="t-Icon fa-solid fa-user-plus"></span>
+            <span class="t-Button-label">Register</span>
+          </a>
+        </li>
+        <li class="t-NavigationBar-item">
+          <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="#">
+            <span class="t-Icon fa-solid fa-user"></span>
+            <span class="t-Button-label">Login</span>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </header>    <div class="t-Body">
@@ -248,15 +280,86 @@ aW5rIjpudWxsfQ=="><input type="hidden" id="P0_WMT_D" name="P0_WMT_D" value=""><i
     <span class="t-Login-logo lto-logo"></span>
     <h1 class="t-Login-title" id="R32767896616544951_heading"><b>LTMS PORTAL</b><br><center><h4>Land Transportation Management System</h4></center></h1>
   </div>
-  <div class="t-Login-body">
-    <div class="t-Form-fieldContainer t-Form-fieldContainer--hiddenLabel rel-col  apex-item-wrapper apex-item-wrapper--text-field apex-item-wrapper--has-icon" id="P9999_USERNAME_CONTAINER"><div class="t-Form-labelContainer t-Form-labelContainer--hiddenLabel col col-null">
-<label for="P9999_USERNAME" id="P9999_USERNAME_LABEL" class="t-Form-label u-VisuallyHidden">LTO Client Number</label>
-</div><div class="t-Form-inputContainer col col-null"><div class="t-Form-itemWrapper"><input type="text" id="P9999_USERNAME" name="P9999_USERNAME" placeholder="Email or LTO Client Number" class="text_field apex-item-text apex-item-has-icon" size="40" maxlength="100"><span class="apex-item-icon fa fa-user" aria-hidden="true"></span></div><span id="P9999_USERNAME_error_placeholder" class="a-Form-error" data-template-id="32741443991544493_ET"></span></div></div><div class="t-Form-fieldContainer t-Form-fieldContainer--hiddenLabel rel-col  apex-item-wrapper apex-item-wrapper--password apex-item-wrapper--has-icon" id="P9999_PASSWORD_CONTAINER"><div class="t-Form-labelContainer t-Form-labelContainer--hiddenLabel col col-null">
-<label for="P9999_PASSWORD" id="P9999_PASSWORD_LABEL" class="t-Form-label u-VisuallyHidden">Password</label>
-</div><div class="t-Form-inputContainer col col-null"><div class="t-Form-itemWrapper"><input type="password" name="P9999_PASSWORD" size="40" maxlength="100" value="" id="P9999_PASSWORD" placeholder="PASSWORD" class="password apex-item-text apex-item-has-icon" style="text-transform:none !important" onkeypress="return apex.submit({request:'P9999_PASSWORD',submitIfEnter:event})"><span class="apex-item-icon fa fa-key" aria-hidden="true"></span><span class="t-Form-itemText t-Form-itemText--post"><span aria-hidden="true" class="fa fa-eye-slash reveal-icon"></span></span></div><span id="P9999_PASSWORD_error_placeholder" class="a-Form-error" data-template-id="32741443991544493_ET"></span></div></div><div class="t-Form-fieldContainer t-Form-fieldContainer--hiddenLabel rel-col login-float-left apex-item-wrapper apex-item-wrapper--checkbox " id="P9999_REMEMBER_CONTAINER"><div class="t-Form-labelContainer t-Form-labelContainer--hiddenLabel col col-null">
-<label for="P9999_REMEMBER" id="P9999_REMEMBER_LABEL" class="t-Form-label u-VisuallyHidden">Remember Username</label>
-</div><div class="t-Form-inputContainer col col-null"><div class="t-Form-itemWrapper"><div tabindex="-1" id="P9999_REMEMBER" aria-labelledby="P9999_REMEMBER_LABEL" class="checkbox_group apex-item-group apex-item-group--rc apex-item-checkbox" role="group">
-<div class="apex-item-option"><input type="checkbox" id="P9999_REMEMBER_0" name="P9999_REMEMBER" value="Y"><label for="P9999_REMEMBER_0">Remember Username</label></div>
+<div class="t-Login-body">
+  <div class="t-Form-fieldContainer t-Form-fieldContainer--hiddenLabel rel-col apex-item-wrapper apex-item-wrapper--text-field" id="P9999_USERNAME_CONTAINER">
+    <!-- <div class="t-Form-labelContainer t-Form-labelContainer--hiddenLabel col col-null">
+      <label for="P9999_USERNAME" id="P9999_USERNAME_LABEL" class="t-Form-label u-VisuallyHidden">
+        LTO Client Number
+      </label>
+    </div> -->
+  
+    <div class="t-Form-fieldContainer t-Form-fieldContainer--hiddenLabel rel-col apex-item-wrapper apex-item-wrapper--text-field" id="P9999_USERNAME_CONTAINER">
+      <div class="t-Form-labelContainer t-Form-labelContainer--hiddenLabel col col-null">
+        <label for="P9999_USERNAME" id="P9999_USERNAME_LABEL" class="t-Form-label u-VisuallyHidden">
+          LTO Client Number
+        </label>
+      </div>
+    
+      <div class="t-Form-inputContainer col col-null">
+        <div class="t-Form-itemWrapper" style="position: relative;">
+          <input type="text"
+                 id="P9999_USERNAME"
+                 name="P9999_USERNAME"
+                 placeholder="Email or LTO Client Number"
+                 class="text_field apex-item-text"
+                 size="40"
+                 maxlength="100"
+                 style="padding-right: 2rem;"> <!-- space for icon -->
+    
+          <!-- 👤 Heroicon: User -->
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="1.5"
+               style="width:20px;height:20px;position:absolute;right:10px;top:50%;transform:translateY(-50%);color:#6b7280;pointer-events:none;z-index:2;">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a8.25 8.25 0 0 1 15 0"/>
+          </svg>
+        </div>
+        <span id="P9999_USERNAME_error_placeholder" class="a-Form-error"></span>
+      </div>
+    </div>
+    
+    <!-- ✅ Password Field -->
+      <div class="t-Form-fieldContainer t-Form-fieldContainer--hiddenLabel rel-col apex-item-wrapper apex-item-wrapper--password" id="P9999_PASSWORD_CONTAINER">
+      <div class="t-Form-labelContainer t-Form-labelContainer--hiddenLabel col col-null">
+        <label for="P9999_PASSWORD" id="P9999_PASSWORD_LABEL" class="t-Form-label u-VisuallyHidden">
+          Password
+        </label>
+      </div>
+    
+      <div class="t-Form-inputContainer col col-null">
+        <div class="t-Form-itemWrapper" style="position: relative;">
+          <input type="password"
+                 id="P9999_PASSWORD"
+                 name="P9999_PASSWORD"
+                 placeholder="Password1"
+                 class="password_field apex-item-text"
+                 size="40"
+                 maxlength="100"
+                 style="padding-right: 2rem;"> <!-- space for icon -->
+    
+          <!-- 🔒 Heroicon: Lock Closed -->
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="1.5"
+               style="width:20px;height:20px;position:absolute;right:10px;top:50%;transform:translateY(-50%);color:#6b7280;pointer-events:none;z-index:2;">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M16.5 10.5V7.5a4.5 4.5 0 1 0-9 0v3M6.75 10.5h10.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-1.5 1.5H6.75a1.5 1.5 0 0 1-1.5-1.5V12a1.5 1.5 0 0 1 1.5-1.5z"/>
+          </svg>
+        </div>
+        <span id="P9999_PASSWORD_error_placeholder" class="a-Form-error"></span>
+      </div>
+    </div>
+
+  
+  <label for="P9999_REMEMBER" id="P9999_REMEMBER_LABEL" class="t-Form-label u-VisuallyHidden">Remember Username</label>
+
+  </div><div class="t-Form-inputContainer col col-null"><div class="t-Form-itemWrapper"><div tabindex="-1" id="P9999_REMEMBER" aria-labelledby="P9999_REMEMBER_LABEL" class="checkbox_group apex-item-group apex-item-group--rc apex-item-checkbox" role="group">
+  <div class="apex-item-option"><input type="checkbox" id="P9999_REMEMBER_0" name="P9999_REMEMBER" value="Y"><label for="P9999_REMEMBER_0">Remember Username</label></div>
 </div>
 </div><span id="P9999_REMEMBER_error_placeholder" class="a-Form-error" data-template-id="32741443991544493_ET"></span></div></div><button onclick="void(0);" class="t-Button login-float-right  t-Button--link" type="button" id="btn-forgot-pwd"><span class="t-Button-label">Forgot Password</span></button><input type="hidden" id="P9999_REAL_USERNAME" name="P9999_REAL_USERNAME" value=""><input type="hidden" data-for="P9999_REAL_USERNAME" value="2PZh0ORw7EzZ2kI4sBrl1dmkmyMZMs4sEDYRiJdbC9LN5969ofl1xG6gQz7emoib6d0xQlRVYFX_qz4vIJwdQA"><input type="hidden" id="P9999_ERROR_CODE" name="P9999_ERROR_CODE" value=""><input type="hidden" data-for="P9999_ERROR_CODE" value="F6RLrqKrFG3hNBfysyNnibFGAi4uT2373IlFrphPjHlTnLI0bWvoV5WI1eoXRE2devMLsF_mg-rsEV70eTcWCg"><input type="hidden" id="P9999_VERIFICATION_NUMBER" name="P9999_VERIFICATION_NUMBER" value=""><input type="hidden" data-for="P9999_VERIFICATION_NUMBER" value="3NWPE6NqD0F7J12HAh_qrNHYxo5Dlu9HS1DIm8n98sG_YVNGg-Mx_aqIlVcJbL1_e4nLz849PZGX_KN4HC9JhQ"><input type="hidden" id="P9999_LINK_VERIFICATION_CODE" name="P9999_LINK_VERIFICATION_CODE" value=""><input type="hidden" data-for="P9999_LINK_VERIFICATION_CODE" value="LtpmWiTkGyK4so_MZMkVxU4l3yKuhaaTyulUhsJYEqq4kaOYdzAHaeKVBzVpWb6Tchbe41NNMaYKMEbWd3TCjA"><input type="hidden" id="P9999_POPUP_TITLE" name="P9999_POPUP_TITLE" value="Change Password"><input type="hidden" data-for="P9999_POPUP_TITLE" value="-OUkYPiyT5TdLT3MtCSQUZlPz9f76EuR0-wVh5h9c3MwBkAfeHuzlBVTiJzYKXSQl4eYYFIdOILXAcvRnR4tTQ"><input type="hidden" id="P9999_AFTER_LOGIN_PAGE" name="P9999_AFTER_LOGIN_PAGE" value="DASHBOARD"><input type="hidden" data-for="P9999_AFTER_LOGIN_PAGE" value="KDEGhM3zuwIZq4224-ryXtlXVH1R7Y4QNCJo046qDUXA3j8r52dEbxPhUKXUxl-Tx3zHjGLDOomh1S0-AmYZIg">
   </div>

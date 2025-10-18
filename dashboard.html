@@ -2,7 +2,8 @@
 <html class="no-js  page-5000 app-PUBLIC_PORTAL gecko mac js" lang="en-us"><head>
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <meta charset="utf-8">
-  <title>LTMS Dashboard</title><link rel="stylesheet"
+  <title>LTMS Dashboard</title>
+  <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
@@ -13,7 +14,14 @@
 
   <link rel="stylesheet" href="dashboard_files/font-apex.min.css" type="text/css">
 <link rel="stylesheet" href="dashboard_files/Core.min.css" type="text/css">
-
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+.t-Icon[class*="fa-"] {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+</style>
 <style>
   /* Close button styling */
   .btn-close {
@@ -240,25 +248,61 @@ transition:all .5s linear
       <a href="https://portal.lto.gov.ph/ords/f?p=1200:HOME:5924625441925:::::" class="t-Header-logo-link"><img src="dashboard_files/lto_logo.png" style="float:left;"></a>
     </div>
     <div class="t-Header-navBar">
-      <ul class="t-NavigationBar " id="69964099393747305"><li class="t-NavigationBar-item ">
-  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="javascript:void(window.open('https://lto.gov.ph/'));">
-    <span class="t-Icon fa fa-cloud"></span><span class="t-Button-label">LTO Official Webpage</span><span class="t-Button-badge"></span>
-  </a>
-</li><li class="t-NavigationBar-item ">
-  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar js-menuButton" type="button" id="L69964099393747307" data-menu="menu_L69964099393747307" aria-haspopup="true" aria-expanded="false">
-      <span class="t-Icon fa fa-graduation-cap"></span><span class="t-Button-label">E-Learning</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow"></span>
-  </button></li><li class="t-NavigationBar-item ">
-  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="https://portal.lto.gov.ph/ords/f?p=PUBLIC_PORTAL:CONTACT_US:5924625441925:::::">
-    <span class="t-Icon fa fa-phone"></span><span class="t-Button-label">Contact</span><span class="t-Button-badge"></span>
-  </a>
-</li><li class="t-NavigationBar-item is-active ">
-  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="https://portal.lto.gov.ph/ords/f?p=PUBLIC_PORTAL:DASHBOARD:5924625441925:::::">
-      <span class="t-Icon fa fa-home"></span><span class="t-Button-label">Dashboard</span><span class="t-Button-badge"></span>
-  </a>
-</li><li class="t-NavigationBar-item has-username">
-  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar js-menuButton" type="button" id="L69964099393747322" data-menu="menu_L69964099393747322" aria-haspopup="true" aria-expanded="false">
-      <span class="t-Icon fa fa-user"></span><span class="t-Button-label">Delito - 22-860102-4463907</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow"></span>
-  </button></li></ul>
+      <ul class="t-NavigationBar" id="69964099393747305">
+        <li class="t-NavigationBar-item">
+          <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="javascript:void(window.open('https://lto.gov.ph/'));">
+            <span class="t-Icon fa-solid fa-globe"></span>
+            <span class="t-Button-label">LTO Official Webpage</span>
+            <span class="t-Button-badge"></span>
+          </a>
+        </li>
+      
+        <li class="t-NavigationBar-item">
+          <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar js-menuButton"
+                  type="button"
+                  id="L69964099393747307"
+                  data-menu="menu_L69964099393747307"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+            <span class="t-Icon fa-solid fa-book-open"></span>
+            <span class="t-Button-label">E-Learning</span>
+            <!-- <span class="t-Button-badge"></span>
+            <span class="a-Icon icon-down-arrow"></span> -->
+          </button>
+        </li>
+      
+        <li class="t-NavigationBar-item">
+          <a class="t-Button t-Button--icon t-Button--header t-Button--navBar"
+             href="https://portal.lto.gov.ph/ords/f?p=PUBLIC_PORTAL:CONTACT_US:5924625441925:::::">
+            <span class="t-Icon fa-solid fa-phone-volume"></span>
+            <span class="t-Button-label">Contact</span>
+            <span class="t-Button-badge"></span>
+          </a>
+        </li>
+      
+        <li class="t-NavigationBar-item is-active">
+          <a class="t-Button t-Button--icon t-Button--header t-Button--navBar"
+             href="https://portal.lto.gov.ph/ords/f?p=PUBLIC_PORTAL:DASHBOARD:5924625441925:::::">
+            <span class="t-Icon fa-solid fa-house"></span>
+            <span class="t-Button-label">Dashboard</span>
+            <span class="t-Button-badge"></span>
+          </a>
+        </li>
+      
+        <li class="t-NavigationBar-item has-username">
+          <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar js-menuButton"
+                  type="button"
+                  id="L69964099393747322"
+                  data-menu="menu_L69964099393747322"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+            <span class="t-Icon fa-solid fa-circle-user"></span>
+            <span class="t-Button-label">Delito - 22-860102-4463907</span>
+            <!-- <span class="t-Button-badge"></span>
+            <span class="a-Icon icon-down-arrow"></span> -->
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
 </header>
